@@ -85,3 +85,6 @@ set -x HOMEBREW_INSTALL_CLEANUP 1
 # uninstall by removing these lines or running `tabtab uninstall slss`
 [ -f ~/.config/yarn/global/node_modules/tabtab/.completions/slss.fish ]
 and . ~/.config/yarn/global/node_modules/tabtab/.completions/slss.fish
+
+set -x PATH (python3 -m site --user-base)/bin $PATH
+alias ojt='g++ main.cpp && oj t'
